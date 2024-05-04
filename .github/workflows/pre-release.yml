@@ -1,4 +1,4 @@
-name: dotnet package
+name: Prerelase Build and Release to beta tag.
 on:
     workflow_dispatch:
 jobs:
@@ -39,6 +39,7 @@ jobs:
         release_name: Release Beta
         draft: false
         prerelease: true
+        allowUpdates: true
 
     - name: Upload Release Asset
       id: upload-release-asset 
