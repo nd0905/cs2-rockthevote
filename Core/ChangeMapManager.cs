@@ -10,7 +10,7 @@ namespace cs2_rockthevote
         [GameEventHandler(HookMode.Post)]
         public HookResult OnRoundEndMapChanger(EventRoundEnd @event, GameEventInfo info)
         {
-            Server.PrintToChatAll(_localizer.LocalizeWithPrefixInternal(_prefix, "general.changing-map", NextMap!));
+            Server.PrintToChatAll("Round END!");
             _changeMapManager.ChangeNextMap(mapEnd: true);
             return HookResult.Continue;
         }
