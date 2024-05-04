@@ -1,4 +1,4 @@
-name: Prerlease Build and Release to beta tag.
+name: Prerelase Build and Release to beta tag.
 on:
     workflow_dispatch:
 jobs:
